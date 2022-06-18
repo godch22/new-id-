@@ -1,0 +1,102 @@
+#집합
+# s1 = set([1])
+# s2 = set([1, 2])
+# s3 = set([2, 3])
+# 합집합 구하기
+# print(s1|s2, s2|s3)
+# 자집합 구하기
+# print(s1-s2, s2-s3)
+# 고집합 구하기
+# print(s1&s2, s2&s3)
+#
+# def say_myself(name, age,man = True):
+#     print("나의 이름은 %s 입니다" % name)
+#     print("나의 나이는 %d 입니다" % age)
+#     if man:
+#         print("남자입니다.")
+#     else:
+#         print("여자입니다.")
+#
+# say_myself("신찬희", 14)
+#함수의 결과값(반환값)의 개수는 무조건 1개이다.
+# def sum_mul(a,b):
+#     return a+b, a*b
+# print(sum_mul(3,4))
+#
+# a = 1
+# def vartest():
+#     a = 2
+#     return a
+#
+# vartest()
+# print(a)
+#
+# def solution(s):
+#     nums = {'zero':'0','one':'1','two':'2','three':'3','four':'4','five':'5','six':'6','seven':'7','eight':'8','nine':'9'}
+#     for key,value in nums.items():
+#         if key in s:
+#             s =  s.replace(key,value)
+#     return int(s)
+#
+# s = "one2three4"
+# print(solution(s))
+# ============================================================================================
+# def solution(new_id):
+#     a = input()
+#     n = [a]
+#     print(a.lower())
+#     while '..' in a:
+#         a.replace('..','.')
+#         print(a)
+# ==========================================================================================
+# a = 'Hello Python'
+# print(a.count('o'))#해당 분자가 몇개 존재하는지를 반환
+# print(a.find('l'))# l이라는 문자가 처음 나오는 인덱스 번호 반환 단, 없는 문자응 찾을 경우 -1 반환
+# print(a.index('l'))# l이라는 문자가 처음 나오는 인덱스 번호 반환 단, 없는 문자를 찾는 경우 에러 발생
+# print(a.replace('py','my'))# old문자를 new문자로 바꾸어준다.
+# print(a.split())#괄호 안에 있는 문자를 기준으로 문자열을 나누어준다.단 괄호안에 아무것도 쓰지 않을 경우 공백을 기준으로 나누어준다.
+# print(a.upper())#소문자를 대문자로
+# print(a.lower())# 대문자를 소문자로
+# print(','.join(a)) #인덱스 번호 사이사이에 해당 문자를 집어넣어준다.
+# print(a.capitalize())#0번째 문자가 대문자로 변경된다.
+# print(a.startswith('el')) #해당 문자로 시작하는지를 물어본다. True/False
+# print(a.endswith('ton')) # 해당 문자로 끝나는지를 물어본다. True/ False
+# print(a.is~)# is로 시작하는 함수들은 물어보는 함수 = True/ False를 반환
+#a.isalnum() = a라는 문자가 알파벳 또는 숫자인지를 물어본다.
+# a = '123'
+# print(a.isalpha()) # a라는 문자가 알파벳인지를 물어본다.
+# print(a.isdigit()) #a 라는 문자가 숫자로 이루어져 있는지 물어본다.
+
+
+# a = [1,2,3,[4,5],6]
+# print(a[3][0])# 인덱싱
+# print(a[:3])#슬라이싱
+
+
+#3->7 수정
+# a = [1,2,3,[4,5],6]
+# a[2] = 7
+# ptint(a)
+
+#[4,5] 삭제
+# a = [1,2,3,[4,5],6]
+# del a[3]
+# print(a)
+# b = [7,8,9]
+# print(a+b)
+# print(a)
+
+
+# d = {1 : '사과', 2 : '복숭아', 3: '바나나'}
+# print(d[1])
+
+# 수정
+# # d = {1 : '사과', 2 : '복숭아', 3: '바나나'}
+# d[1] = '레몬'
+
+#삭제
+# d = {1 : '사과', 2 : '복숭아', 3: '바나나'}
+# del d[1]
+# print(d)
+
+
